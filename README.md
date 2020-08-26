@@ -9,4 +9,4 @@
  
  The development IDE is IDEA, if you also use this IDE, you may also clean the facets(File->Project Structure->facets).
  
- The output of this java file has write to output.txt
+ The output of this java file has write to project/output.txt
