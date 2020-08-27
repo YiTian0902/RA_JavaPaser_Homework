@@ -1,0 +1,130 @@
+In the File:/home/tianyi/project/avro-2d3b1fe7efd865639663ba785877182e7e038c45/lang/java/avro/src/test/java/org/apache/avro/io/parsing/TestResolvingGrammarGenerator.java
+Anotation method type with Test are:
+-test
+-testRecordMissingRequiredFieldError
+For Method testRecordMissingRequiredFieldError its^assert.*method contains:
+-Assert.assertEquals("Incorrect exception message", "Found ns.MyRecord, expecting ns.MyRecord, missing required field field2", typeException.getMessage())
+--QualifiedName-java.lang.Throwable.getMessage
+
+
+
+In the File:/home/tianyi/project/avro-2d3b1fe7efd865639663ba785877182e7e038c45/lang/java/avro/src/test/java/org/apache/avro/TestDataFileMeta.java
+Anotation method type with Test are:
+-testUseReservedMeta
+-testUseMeta
+-testUseMetaAfterCreate
+-testBlockSizeSetInvalid
+For Method testBlockSizeSetInvalid its^assert.*method contains:
+-assertEquals(33, exceptions)
+-assertEquals("bar", r.getMetaString("hello"))
+--QualifiedName-org.apache.avro.file.DataFileStream.getMetaString
+For Method testUseMeta its^assert.*method contains:
+-assertEquals(33, exceptions)
+-assertEquals("bar", r.getMetaString("hello"))
+--QualifiedName-org.apache.avro.file.DataFileStream.getMetaString
+
+
+
+In the File:/home/tianyi/project/avro-2d3b1fe7efd865639663ba785877182e7e038c45/lang/java/ipc/src/test/java/org/apache/avro/TestProtocolGeneric.java
+Anotation method type with Test are:
+-testHello
+-testEcho
+-testEchoBytes
+-testError
+-testUndeclaredError
+-testHandshake
+-testResponseChange
+For Method testHello its^assert.*method contains:
+-assertEquals(new Utf8("goodbye"), response)
+-assertEquals(data, echoed)
+-assertTrue(error.toString().contains("foo"))
+--QualifiedName-java.lang.String.contains
+--QualifiedName-java.lang.Throwable.toString
+-assertEquals(record, echoed)
+-assertEquals(new Utf8("goodbye"), response)
+-assertEquals("an error", ((GenericRecord) error.getValue()).get("message").toString())
+--QualifiedName-java.lang.Object.toString
+--QualifiedName-org.apache.avro.generic.GenericRecord.get
+--QualifiedName-org.apache.avro.AvroRemoteException.getValue
+-assertEquals(rec, response)
+For Method testEchoBytes its^assert.*method contains:
+-assertEquals(new Utf8("goodbye"), response)
+-assertEquals(data, echoed)
+-assertTrue(error.toString().contains("foo"))
+--QualifiedName-java.lang.String.contains
+--QualifiedName-java.lang.Throwable.toString
+-assertEquals(record, echoed)
+-assertEquals(new Utf8("goodbye"), response)
+-assertEquals("an error", ((GenericRecord) error.getValue()).get("message").toString())
+--QualifiedName-java.lang.Object.toString
+--QualifiedName-org.apache.avro.generic.GenericRecord.get
+--QualifiedName-org.apache.avro.AvroRemoteException.getValue
+-assertEquals(rec, response)
+For Method testUndeclaredError its^assert.*method contains:
+-assertEquals(new Utf8("goodbye"), response)
+-assertEquals(data, echoed)
+-assertTrue(error.toString().contains("foo"))
+--QualifiedName-java.lang.String.contains
+--QualifiedName-java.lang.Throwable.toString
+-assertEquals(record, echoed)
+-assertEquals(new Utf8("goodbye"), response)
+-assertEquals("an error", ((GenericRecord) error.getValue()).get("message").toString())
+--QualifiedName-java.lang.Object.toString
+--QualifiedName-org.apache.avro.generic.GenericRecord.get
+--QualifiedName-org.apache.avro.AvroRemoteException.getValue
+-assertEquals(rec, response)
+For Method testEcho its^assert.*method contains:
+-assertEquals(new Utf8("goodbye"), response)
+-assertEquals(data, echoed)
+-assertTrue(error.toString().contains("foo"))
+--QualifiedName-java.lang.String.contains
+--QualifiedName-java.lang.Throwable.toString
+-assertEquals(record, echoed)
+-assertEquals(new Utf8("goodbye"), response)
+-assertEquals("an error", ((GenericRecord) error.getValue()).get("message").toString())
+--QualifiedName-java.lang.Object.toString
+--QualifiedName-org.apache.avro.generic.GenericRecord.get
+--QualifiedName-org.apache.avro.AvroRemoteException.getValue
+-assertEquals(rec, response)
+For Method testHandshake its^assert.*method contains:
+-assertEquals(new Utf8("goodbye"), response)
+-assertEquals(data, echoed)
+-assertTrue(error.toString().contains("foo"))
+--QualifiedName-java.lang.String.contains
+--QualifiedName-java.lang.Throwable.toString
+-assertEquals(record, echoed)
+-assertEquals(new Utf8("goodbye"), response)
+-assertEquals("an error", ((GenericRecord) error.getValue()).get("message").toString())
+--QualifiedName-java.lang.Object.toString
+--QualifiedName-org.apache.avro.generic.GenericRecord.get
+--QualifiedName-org.apache.avro.AvroRemoteException.getValue
+-assertEquals(rec, response)
+For Method testError its^assert.*method contains:
+-assertEquals(new Utf8("goodbye"), response)
+-assertEquals(data, echoed)
+-assertTrue(error.toString().contains("foo"))
+--QualifiedName-java.lang.String.contains
+--QualifiedName-java.lang.Throwable.toString
+-assertEquals(record, echoed)
+-assertEquals(new Utf8("goodbye"), response)
+-assertEquals("an error", ((GenericRecord) error.getValue()).get("message").toString())
+--QualifiedName-java.lang.Object.toString
+--QualifiedName-org.apache.avro.generic.GenericRecord.get
+--QualifiedName-org.apache.avro.AvroRemoteException.getValue
+-assertEquals(rec, response)
+For Method testResponseChange its^assert.*method contains:
+-assertEquals(new Utf8("goodbye"), response)
+-assertEquals(data, echoed)
+-assertTrue(error.toString().contains("foo"))
+--QualifiedName-java.lang.String.contains
+--QualifiedName-java.lang.Throwable.toString
+-assertEquals(record, echoed)
+-assertEquals(new Utf8("goodbye"), response)
+-assertEquals("an error", ((GenericRecord) error.getValue()).get("message").toString())
+--QualifiedName-java.lang.Object.toString
+--QualifiedName-org.apache.avro.generic.GenericRecord.get
+--QualifiedName-org.apache.avro.AvroRemoteException.getValue
+-assertEquals(rec, response)
+
+
+
